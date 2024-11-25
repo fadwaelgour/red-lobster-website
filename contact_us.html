@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Red Lobster</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes slide {
+            0% { background-image: url('slide1.jpg'); }
+            33% { background-image: url('slide2.jpg'); }
+            66% { background-image: url('slide3.jpg'); }
+            100% { background-image: url('slide1.jpg'); }
+        }
+
+        body {
+            animation: slide 15s infinite;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #e63e00;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info img {
+            width: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <img src="logo.png" alt="Red Lobster Logo" style="width: 50px; vertical-align: middle;">
+    Red Lobster Restaurant
+</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="details.html">Details</a>
+    <a href="contact_us.html">Contact Us</a>
+    <a href="location.html">Location</a>
+</div>
+
+<div class="content">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info">
+        <h2>Our Contact Details</h2>
+        <p><strong>Email:</strong> info@redlobster.com</p>
+        <p><strong>Phone:</strong> +1-800-RED-LOBSTER</p>
+        <div>
+            <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 COMP213 Individual Project - Student Name: Fadwar. Images sourced from free online resources.
+</footer>
+
+</body>
+</html>
